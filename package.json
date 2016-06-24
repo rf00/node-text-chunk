@@ -1,17 +1,27 @@
 {
-	"name": "node-text-chunk",
-	"version": "0.0.1",
-	"description": "BREAK TEXT IN CHUNK BY LENGTH OR CHAR CODE LENGTH !",
-	"main": "lib/main.js",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/rf00/node-text-chunk.git"
-	},
-	"keywords": [
-		"text",
-		"chunk",
-		"split"
-	],
-	"author": "rf00 <rf00mail@gmail.com>",
-	"license": "MIT"
+  "name": "node-text-chunk",
+  "version": "0.0.1",
+  "description": "BREAK TEXT IN CHUNK BY LENGTH OR CHAR CODE LENGTH !",
+  "main": "lib/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rf00/node-text-chunk.git"
+  },
+  "keywords": [
+    "text",
+    "chunk",
+    "split"
+  ],
+  "scripts": {
+    "test": "make test"
+  },
+  "author": "rf00 <rf00mail@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rf00/node-text-chunk/issues"
+  },
+  "homepage": "https://github.com/rf00/node-text-chunk#readme",
+  "directories": {
+    "example": "example"
+  }
 }
