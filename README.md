@@ -1,5 +1,7 @@
 # node-text-chunk
 
+[![npm version](https://badge.fury.io/js/node-text-chunk.svg)](https://badge.fury.io/js/node-text-chunk)
+
 ## Installation
 
 ```
