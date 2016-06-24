@@ -25,9 +25,9 @@ var text = chunk.text('HelloWorld!', 0, function(err){
 console.log('This function is missing length parameter!\n' + text);
 
 /*
-This function is missing length parameter!
 ERROR: Missing string or length parameter!
 {"string":"HelloWorld!","length":0}
+This function is missing length parameter!
 undefined
 */
 
@@ -38,9 +38,9 @@ var text = chunk.text('', 5, function(err){
 console.log('This function is missing string parameter!\n' + text);
 
 /*
-This function is missing string parameter!
 ERROR: Missing string or length parameter!
 {"string":"","length":5}
+This function is missing string parameter!
 undefined
 */
 
