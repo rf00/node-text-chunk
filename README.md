@@ -29,3 +29,38 @@ Returns an `array` of string which is chunked by char code length.
 `length` - Base on char code length
 
 `callback` - callback when there is an error
+
+### `var text = chunk.divide(string, {length: [][, options}[, callback])`
+
+Returns an `array` of string which is divided by specific length. Returns an object if `name` is specified.
+
+`length` - an array of length
+
+`name(Optional)` - name of the object
+
+`returnUnnamed(Optional)` - Default to false, set to true will returns string that out of length parameter.
+
+##Quick Examples
+
+```js
+var text = chunk.divide('HelloWorld!', {length: [2, 5], returnUnnamed: false}, function(err){
+	console.log(err);
+});
+
+console.log('This text is chunked by multiple length parameter and returns an array!\n' + text);
+
+/*
+This text is chunked by multiple length parameter and returns an array!
+He,lloWo
+*/
+
+var text = chunk.divide('HelloWorld!', {name: ['one', 'two'], length: [2, 5], returnUnnamed: true}, function(err){
+	console.log(err);
+});
+
+console.log('This text is chunked by multiple length parameter and returns an object!\n' + JSON.stringify(text));
+
+/*
+This text is chunked by multiple length parameter and returns an object!
+{"one":"He","two":"lloWo","Unnamed":"rld!"}
+*/

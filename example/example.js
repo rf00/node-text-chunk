@@ -44,3 +44,48 @@ This function is missing string parameter!
 undefined
 */
 
+var text = chunk.divide('HelloWorld!', {length: [2, 5], returnUnnamed: false}, function(err){
+	console.log(err);
+});
+
+console.log('This text is chunked by multiple length parameter and returns an array!\n' + text);
+
+/*
+This text is chunked by multiple length parameter and returns an array!
+He,lloWo
+*/
+
+var text = chunk.divide('HelloWorld!', {length: [2, 5], returnUnnamed: true}, function(err){
+	console.log(err);
+});
+
+console.log('This text is chunked by multiple length parameter and returns an array!\n' + text);
+
+/*
+This text is chunked by multiple length parameter and returns an array!
+He,lloWo,rld!
+*/
+
+var text = chunk.divide('HelloWorld!', {length: [2, 50], returnUnnamed: true}, function(err){
+	console.log(err);
+});
+
+console.log('This text is chunked by multiple length parameter and returns an array!\n' + text);
+
+/*
+ERROR: The length is less than the divided length parameter!
+{"string": "HelloWorld!", "options": {"length":[2,50],"returnUnnamed":true}}
+This text is chunked by multiple length parameter and returns an array!
+He,lloWorld!
+*/
+
+var text = chunk.divide('HelloWorld!', {name: ['one', 'two'], length: [2, 5], returnUnnamed: true}, function(err){
+	console.log(err);
+});
+
+console.log('This text is chunked by multiple length parameter and returns an object!\n' + JSON.stringify(text));
+
+/*
+This text is chunked by multiple length parameter and returns an object!
+{"one":"He","two":"lloWo","Unnamed":"rld!"}
+*/

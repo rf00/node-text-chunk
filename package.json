@@ -1,6 +1,6 @@
 {
   "name": "node-text-chunk",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "BREAK TEXT IN CHUNK BY LENGTH OR CHAR CODE LENGTH !",
   "main": "lib/main.js",
   "repository": {
