@@ -30,7 +30,7 @@ Returns an `array` of string which is chunked by char code length.
 
 `callback` - callback when there is an error
 
-### `var text = chunk.divide(string, {length[, options]}[, callback])`
+### `var text = chunk.divide(string, {length[, name, returnUnnamed]}[, callback])`
 
 Returns an `array` of string which is divided by specific length. Returns an `object` if name is specified.
 
