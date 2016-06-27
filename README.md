@@ -18,6 +18,8 @@ var chunk = require('node-text-chunk')
 
 Returns an `array` of string which is chunked by length.
 
+`string` - text string
+
 `length` - Base on text length
 
 `callback` - callback when there is an error
@@ -26,6 +28,8 @@ Returns an `array` of string which is chunked by length.
 
 Returns an `array` of string which is chunked by char code length.
 
+`string` - text string
+
 `length` - Base on char code length
 
 `callback` - callback when there is an error
@@ -33,6 +37,8 @@ Returns an `array` of string which is chunked by char code length.
 ### `var text = chunk.divide(string, {length: [][, options}[, callback])`
 
 Returns an `array` of string which is divided by specific length. Returns an object if `name` is specified.
+
+`string` - text string
 
 `length` - an array of length
 
