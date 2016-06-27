@@ -36,7 +36,7 @@ Returns an `array` of string which is divided by specific length. Returns an `ob
 
 `length` - an array of length
 
-`name` - (Optional)name of the object
+`name` - (Optional)name of the object, the object named with `escape` will not return.
 
 `returnUnnamed` - Default to false, set to true will returns string that out of length parameter.
 
@@ -94,4 +94,15 @@ console.log('This text is chunked by multiple length parameter and returns an ob
 /*
 This text is chunked by multiple length parameter and returns an object!
 {"one":"He","two":"lloWo","Unnamed":"rld!"}
+*/
+
+var text = chunk.divide('HelloWorld!', {name: ['one', 'escape', 'three'], length: [5, 5, 1], returnUnnamed: true}, function(err){
+	console.log(err);
+});
+
+console.log('This text is chunked by multiple length parameter and returns an object!\n' + JSON.stringify(text));
+
+/*
+This text is chunked by multiple length parameter and returns an object!
+{"one":"Hello","three":"!"}
 */

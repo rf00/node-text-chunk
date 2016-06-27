@@ -89,3 +89,14 @@ console.log('This text is chunked by multiple length parameter and returns an ob
 This text is chunked by multiple length parameter and returns an object!
 {"one":"He","two":"lloWo","Unnamed":"rld!"}
 */
+
+var text = chunk.divide('HelloWorld!', {name: ['one', 'escape', 'three'], length: [5, 5, 1], returnUnnamed: true}, function(err){
+	console.log(err);
+});
+
+console.log('This text is chunked by multiple length parameter and returns an object!\n' + JSON.stringify(text));
+
+/*
+This text is chunked by multiple length parameter and returns an object!
+{"one":"Hello","three":"!"}
+*/
