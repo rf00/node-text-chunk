@@ -36,7 +36,7 @@ Returns an `array` of string which is divided by specific length. Returns an `ob
 
 `length` - an array of length
 
-`name` - (Optional)name of the object, the object named with `escape` will not return.
+`name` - (Optional) name of the object, the object named with `escape` will not return.
 
 `returnUnnamed` - Default to false, set to true will returns string that out of length parameter.
 
